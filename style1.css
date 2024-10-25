@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #001f3f;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Styling Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.choice {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.score {
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+/* Message Container */
+.msg-container {
+    margin-top: 20px;
+}
+
+#msg {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Button for Playing */
+.play-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: #ff9900;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    .choice img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .msg-container {
+        font-size: 18px;
+    }
+
+    .play-button {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .choice img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .score-board {
+        font-size: 16px;
+    }
+
+    .msg-container {
+        font-size: 16px;
+    }
+}

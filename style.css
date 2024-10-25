@@ -69,23 +69,60 @@ img{
     border-radius: 1rem;
 }
 
-@media (max-width:480px) {
-    h1{
-        width: 100%;
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
     }
-    .score-board{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    .choice img {
+        width: 120px;
+        height: 120px;
     }
-    .choices{
-        display: flex;
+
+    .score-board {
         flex-direction: row;
-        justify-content: center;
-        gap: 0rem;
+        align-items: center;
     }
-    #msg{
-        display: inline-block;
+
+    .score {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .msg-container {
+        font-size: 18px;
+    }
+
+    .play-button {
+        width: 80%;
+        padding: 15px;
     }
 }
 
+/* Very Small Screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6vw;
+        width: 100%;
+    }
+
+    .choice img {
+        display: flex;
+        width: 90px;
+        height: 100px;
+        gap: 1rem;
+    }
+
+    .score-board {
+        font-size: 18px;
+    }
+
+    .msg-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 2rem ;
+    }
+}
